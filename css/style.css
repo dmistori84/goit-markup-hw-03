@@ -50,7 +50,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  background-color: rgba(136, 181, 248, 0.397);
+  /*background-color: rgba(136, 181, 248, 0.397);*/
 }
 .header {
   border-bottom: 1px solid #ececec;
