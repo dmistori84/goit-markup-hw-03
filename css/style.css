@@ -50,7 +50,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /*background-color: rgba(136, 181, 248, 0.397);*/
+  /*background-color: rgba(136, 181, 248, 0.397);   задает границы секциям чтобы видеть их границы*/
 }
 .header {
   border-bottom: 1px solid #ececec;
@@ -69,6 +69,14 @@ img {
   display: flex;
   align-items: center;
 }
+
+/*   Вертикальные паддинги для кликабельности   */
+.nav-item {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+/*   Вертикальные паддинги для кликабельности   */
+
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -78,7 +86,7 @@ img {
   display: flex;
   align-items: center;
 }
-.header-contact-mail {
+.header-contact-mail-item {
   margin-right: 50px;
 }
 
@@ -90,6 +98,7 @@ img {
   margin: -1px;
   border: 0;
   padding: 0;
+  /*скрытие заголовков*/
 
   white-space: nowrap;
   clip-path: inset(100%);
@@ -140,11 +149,15 @@ img {
 .header-contact-tel {
   color: var(--under-color);
 }
+/*             Секция герой                 */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
 }
 .heading {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -180,11 +193,15 @@ img {
 .features-list {
   display: flex;
 }
+.features-list-item {
+  width: 270px;
+}
 
 .features-list-item:not(:last-child) {
   margin-right: 30px;
 }
 .features-list-item-header {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -226,12 +243,14 @@ img {
 .team-list-item {
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
+  background: var(--other-color);
 }
 .team-list {
   display: flex;
   margin-left: -30px;
 }
 .team-header {
+  padding-top: 94px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.19;
@@ -243,6 +262,8 @@ img {
   margin-bottom: 10px;
 }
 .team-discription {
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -263,9 +284,12 @@ img {
 }
 
 /*=========Стилизируем футер=============*/
-.logo-footer {
+.footer {
   padding-top: 60px;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
+}
+.logo-footer {
+  margin-bottom: 20px;
 }
 .adds-link-mail,
 .adds-link-tel,
@@ -291,22 +315,26 @@ img {
 
 .logo-footer {
   display: inline-block;
-  padding-top: 60px;
   padding-bottom: 20px;
 }
-.adds-list {
-  padding-bottom: 60px;
+.adds-item {
+  margin-bottom: 9px;
+}
+.adds-item:last-child {
+  margin-bottom: 0;
 }
 
 /*   Стили для портфолио   */
 
+.portfolio-cards {
+  padding-top: 94px;
+}
 .portfolio-list {
   justify-content: center;
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
-.nav-btn {
+.portfolio-list-item {
   margin-right: 8px;
 }
 .portfolio-list:last-child {
@@ -315,7 +343,6 @@ img {
 .cards-list {
   display: flex;
   flex-wrap: wrap;
-  /*margin-bottom: -30px;*/
 }
 
 .cards-list {
@@ -328,11 +355,6 @@ img {
   margin-right: 30px;
 }
 
-/*
-.cards-item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-*/
 .cards-item {
   margin-bottom: 30px;
 }
@@ -346,17 +368,6 @@ img {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
-
-/*
-.cards-item {
-  width: 370px;
-  margin-right: 30px;
-}
-.cards-item:nth-child(3n) {
-  margin-right: 0;
-}
-.cards-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;*/
 
 .nav-btn:hover,
 .nav-btn:focus {
@@ -375,6 +386,7 @@ img {
   border-color: transparent;
 }
 .cards-title {
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
