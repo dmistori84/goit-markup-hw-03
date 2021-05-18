@@ -70,12 +70,12 @@ img {
   align-items: center;
 }
 
-/*   Вертикальные паддинги для кликабельности   */
-.nav-item {
-  padding-top: 7px;
-  padding-bottom: 7px;
+/*   Вертикальные паддинги для кликабельности   
+.nav-link {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-/*   Вертикальные паддинги для кликабельности   */
+   Вертикальные паддинги для кликабельности   */
 
 .nav-item:not(:last-child) {
   margin-right: 50px;
@@ -237,8 +237,10 @@ img {
 }
 
 /* ____________НАША КОМАНДА_____________*/
+
 .team {
   background-color: #f5f4fa;
+  padding-top: 94px;
 }
 .team-list-item {
   flex-basis: calc((100% - 120px) / 4);
@@ -250,7 +252,6 @@ img {
   margin-left: -30px;
 }
 .team-header {
-  padding-top: 94px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.19;
@@ -315,7 +316,6 @@ img {
 
 .logo-footer {
   display: inline-block;
-  padding-bottom: 20px;
 }
 .adds-item {
   margin-bottom: 9px;
@@ -337,16 +337,13 @@ img {
 .portfolio-list-item {
   margin-right: 8px;
 }
-.portfolio-list:last-child {
-  margin-bottom: 0;
-}
-.cards-list {
-  display: flex;
-  flex-wrap: wrap;
+.portfolio-list-item:last-child {
+  margin-right: 0;
 }
 
 .cards-list {
   display: flex;
+  flex-wrap: wrap;
   margin-right: -30px;
 }
 
