@@ -58,8 +58,6 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .nav {
   display: flex;
@@ -70,12 +68,10 @@ img {
   align-items: center;
 }
 
-/*   Вертикальные паддинги для кликабельности   
 .nav-link {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  display: block;
+  padding: 32px 0;
 }
-   Вертикальные паддинги для кликабельности   */
 
 .nav-item:not(:last-child) {
   margin-right: 50px;
